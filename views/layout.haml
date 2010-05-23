@@ -1,0 +1,45 @@
+%html
+  %head
+  
+    / Site
+    %title Petra Fölk
+    %meta{:charset => "UTF-8"}
+
+    / JS
+    %script{:type => "text/javascript", :src => "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"}
+    %script{:type => "text/javascript", :src => "http://cdn.jquerytools.org/1.2.0/jquery.tools.min.js" }
+    %script{:type => "text/javascript", :src => "/javascripts/pepszi.js"}
+    
+    / Styles
+    %link{:rel => "stylesheet", :href => "/stylesheets/screen.css", :type => "text/css", :media => "screen, projection", :charset => "utf-8"}
+    %link{:rel => "stylesheet", :href => "/stylesheets/print.css", :type => "text/css", :media => "print", :charset => "utf-8"}
+
+    /[if lt IE 8]
+      %link{:rel => "stylesheet", :href => "/stylesheets/ie.css", :type => "text/css", :media => "screen, projection", :charset => "utf-8"}
+      
+    / Uh
+      
+  %body
+    .wrapper
+      .canvas
+
+        %header
+          %a{:href => "/", :title => "Back to the porfolio index .."}
+
+        %nav
+          %ul.nav
+            %li.design
+              %a{:href => "/portfolio/web", :title => "Webdesign"} &nbsp;
+            %li.exp
+              %a{:href => "/portfolio/experimental", :title => "Experimental works"} &nbsp;
+            %li.photos
+              %a{:href => "/portfolio/photos", :title => "Photos"} &nbsp;
+            %li.graphics
+              %a{:href => "/portfolio/graphics", :title => "Graphical works"} &nbsp;
+            %li.about
+              %a{:href => "/about", :title => "Experimental works"} &nbsp;
+            
+
+        %section{:id => "content"}
+          = yield
+                

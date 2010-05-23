@@ -1,0 +1,43 @@
+/*
+Syntax error: Invalid CSS after "@import ": expected string or url(), was "blueprint.sass"
+        on line 1 of /Users/tarsolya/Sites/pepszi/sass/print.scss
+
+1: /Users/tarsolya/Sites/pepszi/sass/print.scss
+
+Backtrace:
+/Users/tarsolya/Sites/pepszi/sass/print.scss:1
+/Users/tarsolya/.rvm/gems/ruby-1.9.1-p378@pepszi/gems/haml-3.0.4/lib/sass/scss/parser.rb:782:in `expected'
+/Users/tarsolya/.rvm/gems/ruby-1.9.1-p378@pepszi/gems/haml-3.0.4/lib/sass/scss/parser.rb:757:in `expected'
+/Users/tarsolya/.rvm/gems/ruby-1.9.1-p378@pepszi/gems/haml-3.0.4/lib/sass/scss/parser.rb:753:in `tok!'
+/Users/tarsolya/.rvm/gems/ruby-1.9.1-p378@pepszi/gems/haml-3.0.4/lib/sass/scss/parser.rb:204:in `import_directive'
+/Users/tarsolya/.rvm/gems/ruby-1.9.1-p378@pepszi/gems/haml-3.0.4/lib/sass/scss/parser.rb:131:in `special_directive'
+/Users/tarsolya/.rvm/gems/ruby-1.9.1-p378@pepszi/gems/haml-3.0.4/lib/sass/scss/parser.rb:109:in `directive'
+/Users/tarsolya/.rvm/gems/ruby-1.9.1-p378@pepszi/gems/haml-3.0.4/lib/sass/scss/parser.rb:317:in `block_child'
+/Users/tarsolya/.rvm/gems/ruby-1.9.1-p378@pepszi/gems/haml-3.0.4/lib/sass/scss/parser.rb:308:in `block_contents'
+/Users/tarsolya/.rvm/gems/ruby-1.9.1-p378@pepszi/gems/haml-3.0.4/lib/sass/scss/parser.rb:58:in `stylesheet'
+/Users/tarsolya/.rvm/gems/ruby-1.9.1-p378@pepszi/gems/haml-3.0.4/lib/sass/scss/parser.rb:24:in `parse'
+/Users/tarsolya/.rvm/gems/ruby-1.9.1-p378@pepszi/gems/haml-3.0.4/lib/sass/engine.rb:179:in `_to_tree'
+/Users/tarsolya/.rvm/gems/ruby-1.9.1-p378@pepszi/gems/haml-3.0.4/lib/sass/engine.rb:160:in `block in render'
+/Users/tarsolya/.rvm/gems/ruby-1.9.1-p378@pepszi/gems/haml-3.0.4/lib/haml/util.rb:242:in `silence_haml_warnings'
+/Users/tarsolya/.rvm/gems/ruby-1.9.1-p378@pepszi/gems/haml-3.0.4/lib/sass/engine.rb:160:in `render'
+/Users/tarsolya/.rvm/gems/ruby-1.9.1-p378@pepszi/gems/compass-0.10.1/lib/compass/compiler.rb:103:in `block in compile'
+/Users/tarsolya/.rvm/gems/ruby-1.9.1-p378@pepszi/gems/compass-0.10.1/lib/compass/logger.rb:43:in `red'
+/Users/tarsolya/.rvm/gems/ruby-1.9.1-p378@pepszi/gems/compass-0.10.1/lib/compass/compiler.rb:102:in `compile'
+/Users/tarsolya/.rvm/gems/ruby-1.9.1-p378@pepszi/gems/compass-0.10.1/lib/compass/compiler.rb:93:in `compile_if_required'
+/Users/tarsolya/.rvm/gems/ruby-1.9.1-p378@pepszi/gems/compass-0.10.1/lib/compass/compiler.rb:84:in `block in run'
+/Users/tarsolya/.rvm/gems/ruby-1.9.1-p378@pepszi/gems/compass-0.10.1/lib/compass/compiler.rb:82:in `each'
+/Users/tarsolya/.rvm/gems/ruby-1.9.1-p378@pepszi/gems/compass-0.10.1/lib/compass/compiler.rb:82:in `run'
+/Users/tarsolya/.rvm/gems/ruby-1.9.1-p378@pepszi/gems/compass-0.10.1/lib/compass/commands/watch_project.rb:92:in `recompile'
+/Users/tarsolya/.rvm/gems/ruby-1.9.1-p378@pepszi/gems/compass-0.10.1/lib/compass/commands/watch_project.rb:40:in `perform'
+/Users/tarsolya/.rvm/gems/ruby-1.9.1-p378@pepszi/gems/compass-0.10.1/lib/compass/commands/base.rb:18:in `execute'
+/Users/tarsolya/.rvm/gems/ruby-1.9.1-p378@pepszi/gems/compass-0.10.1/lib/compass/commands/project_base.rb:19:in `execute'
+/Users/tarsolya/.rvm/gems/ruby-1.9.1-p378@pepszi/gems/compass-0.10.1/lib/compass/exec/sub_command_ui.rb:38:in `perform!'
+/Users/tarsolya/.rvm/gems/ruby-1.9.1-p378@pepszi/gems/compass-0.10.1/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Users/tarsolya/.rvm/gems/ruby-1.9.1-p378@pepszi/gems/compass-0.10.1/bin/compass:26:in `<top (required)>'
+/Users/tarsolya/.rvm/gems/ruby-1.9.1-p378@pepszi/bin/compass:19:in `load'
+/Users/tarsolya/.rvm/gems/ruby-1.9.1-p378@pepszi/bin/compass:19:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"@import \": expected string or url(), was \"blueprint.sass\"\A         on line 1 of /Users/tarsolya/Sites/pepszi/sass/print.scss\A \A 1: /Users/tarsolya/Sites/pepszi/sass/print.scss"; }

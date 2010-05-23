@@ -1,0 +1,185 @@
+// This import applies a global reset to any page that imports this stylesheet.
+@import "blueprint/reset"; 
+
+body {
+  background: url(/images/body-bg.png) repeat-x; 
+  margin: 0; 
+  padding: 0; }
+
+header, nav, section, aside {
+  display: block; }
+  
+.wrapper {
+  width: 100%; 
+  height: 100%; 
+  background: url(/images/wrapper-bg.jpg) 50% 0 no-repeat; 
+  }
+  
+.canvas {
+  width: 960px; 
+  height: 963px; 
+  background: url(/images/canvas-bg.png) no-repeat;
+  margin: 0 auto; }
+  
+header {
+  width: 960px; 
+  height: 150px; 
+
+  a { 
+    display: block; 
+    width: 220px; 
+    height: 90px; 
+  }
+}
+
+
+
+nav {
+  width: 960px; 
+  height: 70px; 
+  background: url(/images/nav-lenia.png) 0 1px no-repeat; 
+
+  ul {
+    list-style-type: none; 
+    display: block; 
+    margin: 0; 
+    padding: 0; 
+    width: 960px; 
+    height: 70px; 
+    padding-left: 27px; 
+    
+    li {
+      display: block; 
+      float: left; 
+      height: 70px; 
+      background: url(/images/nav-bg.png) no-repeat; 
+      
+      a {
+        display: block; 
+        width: 100%; 
+        height: 70px; }
+      
+      &.design {
+        width: 103px; 
+        background-position: -27px 0; 
+        
+        &:hover {
+          background-position: -27px -70px; 
+        }
+      }
+      
+      &.exp {
+        width: 160px; 
+        background-position: -130px 0; 
+
+        &:hover {
+          background-position: -130px -140px; 
+        }
+      }
+      
+      &.photos {
+        width: 92px; 
+        background-position: -290px 0; 
+
+        &:hover {
+          background-position: -290px -210px; 
+        }
+      }
+
+      &.graphics {
+        width: 104px; 
+        background-position: -382px 0; 
+        
+        &:hover {
+          background-position: -382px -280px; 
+        }
+      }
+      
+      &.about {
+        width: 91px; 
+        background-position: -486px 0; 
+
+        &:hover {
+          background-position: -486px -350px; 
+        }
+      }
+    }
+  }
+}
+
+.outer-scroll {
+  padding: 20px 0 0 0; 
+  width: 960px; 
+  height: 488px; 
+
+  .scroll {
+
+    float: left; 
+    position: relative; 
+    overflow: hidden; 
+    width: 618px; 
+    height: 468px; 
+
+    .items {
+      width: 20000em; 
+      position: absolute; 
+
+      div.item { 
+        float:left; }
+    }
+  }
+
+  a.nav {
+    display: block; 
+    width: 31px; 
+    height: 31px; 
+    
+    img { 
+      margin-top: 100px; }
+
+    &.next {
+      margin-right: 140px;
+      margin-left: 20px;
+      float: right; }
+
+    &.previous {
+      margin-left: 100px;
+      margin-right: 20px;
+      float: left; }
+  }
+
+}
+
+.slide {
+  width: 310px; 
+  padding: 10px 20px;
+  
+  h2 {
+    font-family: "Georgia", "serif"; 
+    font-size: 32px; 
+    margin-bottom: 18px; 
+    color: #000; }
+    
+  p {
+    font-family: "Georgia", "serif"; 
+    font-size: 14px; 
+    margin-bottom: 9px; 
+    color: #929292;
+
+    a {
+      color: #aa0384;
+      font-weight: bold;
+      font-family: "Georgia", "serif"; 
+      font-size: 15px; 
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+      
+    }
+  }
+}
+  
+
+
