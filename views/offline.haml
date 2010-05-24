@@ -17,60 +17,96 @@
 
     .items
       .item
-        %img{:src => "/images/offline/biz_cotcot_p.jpg", :alt => "Cotcot business cards"}
+        %a.colorbox{:rel => "bizcot", :href => @bizcot.entries[0] }
+          %img{:src => "/images/offline/biz_cotcot_p.jpg", :alt => "Cotcot business cards"}
         .slide
           %h2 Cotcot business cards
           %p Business cards for editors working at an online fashion and lifesyte magazine, called Cotcot.
           %p
-            %a{:href => "#"} See more »
+            %a.colorbox{:rel => "bizcot", :href => @bizcot.entries[1] } See more »
         
       .item
-        %img{:src => "/images/offline/biz_ombrello_p.jpg", :alt => "Ombrello business cards"}
+        %a.colorbox{:rel => "bizomb", :href => @bizomb.entries[0] }
+          %img{:src => "/images/offline/biz_ombrello_p.jpg", :alt => "Ombrello business cards"}
         .slide
           %h2 Ombrello business cards
           %p Business cards for employees working at the Ombrello Digital Media Company.
           %p
-            %a{:href => "#"} See more »
+            %a.colorbox{:rel => "bizomb", :href => @bizomb.entries[1] } See more »
         
       .item
-        %img{:src => "/images/offline/book_p.jpg", :alt => "Printed book"}
+        %a.colorbox{:rel => "book", :href => @book.entries[0] }
+          %img{:src => "/images/offline/book_p.jpg", :alt => "Printed book"}
         .slide
           %h2 Printed book
           %p Printed book design for the photo project of Krisztina Turna. The book announces a significant historical building in Berlin, illustrated by portraits of people who have been living and working there.
           %p
-            %a{:href => "#"} See more »
+            %a.colorbox{:rel => "book", :href => @book.entries[1] } See more »
 
       .item
-        %img{:src => "/images/offline/flyers_p.jpg", :alt => "Flyers"}
+        %a.colorbox{:rel => "flyers", :href => @flyers.entries[0] }
+          %img{:src => "/images/offline/flyers_p.jpg", :alt => "Flyers"}
         .slide
           %h2 Flyers
           %p Invitation cards for a class reunion, an exhibition and for a recently announced cooking school, called Foodmatters.
           %p
-            %a{:href => "#"} See more »
+            %a.colorbox{:rel => "flyers", :href => @flyers.entries[1] } See more »
         
       .item
-        %img{:src => "/images/flyers/textile_p.jpg", :alt => "Textile"}
+        %a.colorbox{:rel => "textile", :href => @textile.entries[0] }
+          %img{:src => "/images/offline/textile_p.jpg", :alt => "Textile"}
         .slide
           %h2 Textile design
           %p Pinfore dresses for the stundents at a cooking school, called Foodmatters.
           %p
-            %a{:href => "#"} See more »
+            %a.colorbox{:rel => "textile", :href => @textile.entries[1] } See more »
             
       .item
-        %img{:src => "/images/flyers/tshirt_p.jpg", :alt => "T-shirts"}
+        %a.colorbox{:rel => "tshirt", :href => @tshirt.entries[0] }
+          %img{:src => "/images/offline/tshirt_p.jpg", :alt => "T-shirts"}
         .slide
           %h2 T-shirt design
           %p T-shirt designs created for an image campaign about a fashion and lifestyle magazine, called Cotcot.
           %p
-            %a{:href => "#"} See more »
+            %a.colorbox{:rel => "tshirt", :href => @tshirt.entries[1] } See more »
 
       .item
-        %img{:src => "/images/flyers/xmas_p.jpg", :alt => "Christmas"}
+        %a.colorbox{:rel => "xmas", :href => @xmas.entries[0] }
+          %img{:src => "/images/offline/xmas_p.jpg", :alt => "Christmas"}
         .slide
           %h2 Christmas Cards
           %p Printed Gift Cards for Christmas in 2009.
           %p
-            %a{:href => "#"} See more »
+            %a.colorbox{:rel => "xmas", :href => @xmas.entries[1] } See more »
   
   %a.nav.next
     %img{:src => "/images/next.png", :alt => "Next project"}
+
+
+  - @bizcot.entries.each_with_index do |e, i|
+    - unless i < 2 
+      %a.colorbox.hidden{:href => e, :rel => "bizcot"} link
+
+  - @bizomb.entries.each_with_index do |e, i|
+    - unless i < 2 
+      %a.colorbox.hidden{:href => e, :rel => "bizomb"} link
+
+  - @book.entries.each_with_index do |e, i|
+    - unless i < 2 
+      %a.colorbox.hidden{:href => e, :rel => "book"} link
+
+  - @flyers.entries.each_with_index do |e, i|
+    - unless i < 2 
+      %a.colorbox.hidden{:href => e, :rel => "flyers"} link
+
+  - @textile.entries.each_with_index do |e, i|
+    - unless i < 2 
+      %a.colorbox.hidden{:href => e, :rel => "textile"} link
+
+  - @tshirt.entries.each_with_index do |e, i|
+    - unless i < 2 
+      %a.colorbox.hidden{:href => e, :rel => "tshirt"} link
+
+  - @xmas.entries.each_with_index do |e, i|
+    - unless i < 2 
+      %a.colorbox.hidden{:href => e, :rel => "xmas"} link

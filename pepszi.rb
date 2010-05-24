@@ -28,8 +28,8 @@ end
 def load_web_galleries
   @szoba = Gallery.new( '/images/web/4szoba' )
   @sixmm = Gallery.new( '/images/web/6mm' )
-  @bg_cotcot_first = Gallery.new( '/images/web/bg_cotcot_1' )
-  @bg_cotcot_second = Gallery.new( '/images/web/bg_cotcot_2' )
+  @bg_cotcot_first = Gallery.new( '/images/web/bg_cotcot_2' )
+  @bg_cotcot_second = Gallery.new( '/images/web/bg_cotcot_1' )
   @bg_hg = Gallery.new( '/images/web/bg_hg' )
   @foodmatters = Gallery.new( '/images/web/foodmatters' )
   @heyho = Gallery.new( '/images/web/heyho' )
@@ -62,10 +62,19 @@ get '/portfolio/graphics' do
 end
 
 get '/portfolio/logos' do
+  @logos = Gallery.new( '/images/logos/logos' )
   view :logos
 end
 
 get '/portfolio/offline' do
+  @bizcot = Gallery.new( '/images/offline/bizcot' )
+  @bizomb = Gallery.new( '/images/offline/bizomb' )
+  @book = Gallery.new( '/images/offline/book' )
+  @flyers = Gallery.new( '/images/offline/flyers' )
+  @textile = Gallery.new( '/images/offline/textile' )
+  @tshirt = Gallery.new( '/images/offline/tshirt' )
+  @xmas = Gallery.new( '/images/offline/xmas' )
+  
   view :offline
 end
 
