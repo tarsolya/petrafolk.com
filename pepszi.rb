@@ -27,7 +27,7 @@ end
 
 # Actions
 get '/' do
-  view :index
+  view :web
 end
 
 get '/portfolio/experimental' do
