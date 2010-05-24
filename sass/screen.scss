@@ -61,8 +61,6 @@ header {
   }
 }
 
-
-
 nav {
   position: relative; 
   width: 960px; 
@@ -303,5 +301,20 @@ ul.sub {
 a.disabled img { 
   display: none; }
   
+footer {
+  display: block; 
+  width: 960px; 
+  height: 130px; 
+  position: relative;
+  
+  a {
+    display: block;
+    width: 133px;
+    height: 48px;
+    position: absolute;
+    right: 80px;
+    bottom: 10px;
+  }
+}
 
 
