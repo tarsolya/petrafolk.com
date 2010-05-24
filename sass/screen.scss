@@ -64,9 +64,19 @@ header {
 
 
 nav {
+  position: relative; 
   width: 960px; 
   height: 70px; 
   background: url(/images/nav-lenia.png) 0 1px no-repeat; 
+  
+  .scissor {
+    position: absolute; 
+    width: 20px; 
+    height: 18px; 
+    right: 230px; 
+    bottom: -8px; 
+    background: url(/images/kisollo.png) no-repeat;
+  }
 
   ul {
     list-style-type: none; 
