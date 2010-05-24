@@ -25,8 +25,23 @@ class Gallery
   
 end
 
+def load_web_galleries
+  @szoba = Gallery.new( '/images/web/4szoba' )
+  @sixmm = Gallery.new( '/images/web/6mm' )
+  @bg_cotcot_first = Gallery.new( '/images/web/bg_cotcot_1' )
+  @bg_cotcot_second = Gallery.new( '/images/web/bg_cotcot_2' )
+  @bg_hg = Gallery.new( '/images/web/bg_hg' )
+  @foodmatters = Gallery.new( '/images/web/foodmatters' )
+  @heyho = Gallery.new( '/images/web/heyho' )
+  @mammut = Gallery.new( '/images/web/mammut' )
+  @ombrello = Gallery.new( '/images/web/ombrello' )
+  @kari = Gallery.new( '/images/web/origo' )
+  @parentia = Gallery.new( '/images/web/parentia' )
+end
+
 # Actions
 get '/' do
+  load_web_galleries
   view :web
 end
 
@@ -60,6 +75,7 @@ get '/portfolio/photos' do
 end
 
 get '/portfolio/web' do
+  load_web_galleries
   view :web
 end
 

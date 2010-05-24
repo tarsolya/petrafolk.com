@@ -4,10 +4,11 @@
     %img{:src => "/images/previous.png", :alt => "Previous project"}
 
   .scroll
-
+  
     .items
       .item
-        %img{:src => "/images/web/4szoba_p.jpg", :alt => "4szoba.hu"}
+        %a.colorbox{:rel => "szoba", :href => @szoba.entries[0] }
+          %img{:src => "/images/web/4szoba_p.jpg", :alt => "4szoba.hu"}
         .slide
           %h2
             Webdesign
@@ -15,10 +16,11 @@
             4szoba.hu
           %p News site for experts and enquirers in the design and enterieur field. It provides a wide platform for comments, ratings, galleries and news.
           %p
-            %a{:href => "#"} See more »
+            %a.colorbox{:rel => "szoba", :href => @szoba.entries[1] } See more »
         
       .item
-        %img{:src => "/images/web/6mm_p.jpg", :alt => "6mm.hu"}
+        %a.colorbox{:rel => "sixmm", :href => @sixmm.entries[0] }
+          %img{:src => "/images/web/6mm_p.jpg", :alt => "6mm.hu"}
         .slide
           %h2
             Webdesign
@@ -26,10 +28,11 @@
             6mm.hu
           %p Site for airsoft players for reading news, arranging games and keeping in touch.
           %p
-            %a{:href => "#"} See more »
+            %a.colorbox{:rel => "sixmm", :href => @sixmm.entries[1] } See more »
         
       .item
-        %img{:src => "/images/web/cotcot_bg_p.jpg", :alt => "cotcot.hu"}
+        %a.colorbox{:rel => "bg_cotcot_first", :href => @bg_cotcot_first.entries[0] }
+          %img{:src => "/images/web/cotcot_bg_p.jpg", :alt => "cotcot.hu"}
         .slide
           %h2
             Background Design
@@ -37,10 +40,11 @@
             Cotcot.hu
           %p One of the periodically refreshed background designs for the online fashion and lifesytle magazine, called Cotcot. This one is about the famous bycicyle processions, the Critical Mass.
           %p
-            %a{:href => "#"} See more »
+            %a.colorbox{:rel => "bg_cotcot_first", :href => @bg_cotcot_first.entries[1] } See more »
 
       .item
-        %img{:src => "/images/web/cotcot_bg2_p.jpg", :alt => "cotcot.hu"}
+        %a.colorbox{:rel => "bg_cotcot_second", :href => @bg_cotcot_second.entries[0] }
+          %img{:src => "/images/web/cotcot_bg2_p.jpg", :alt => "cotcot.hu"}
         .slide
           %h2
             Background Design
@@ -48,10 +52,11 @@
             Cotcot.hu
           %p One of the periodically refreshed background designs for the online fashion and lifesytle magazine, called Cotcot. This one is about the the colorful features and content of the magazine.
           %p
-            %a{:href => "#"} See more »
+            %a.colorbox{:rel => "bg_cotcot_second", :href => @bg_cotcot_second.entries[1] } See more »
         
       .item
-        %img{:src => "/images/web/food_p.jpg", :alt => "foodmatters.hu"}
+        %a.colorbox{:rel => "foodmatters", :href => @foodmatters.entries[0] }
+          %img{:src => "/images/web/food_p.jpg", :alt => "foodmatters.hu"}
         .slide
           %h2
             Webdesign
@@ -59,10 +64,11 @@
             foodmatters.hu
           %p Website for a cooking school, which presents running courses, organised locally and also gives an online interface for both students and teachers to check lesson dates, read news and various other information.
           %p
-            %a{:href => "#"} See more »
+            %a.colorbox{:rel => "foodmatters", :href => @foodmatters.entries[1] } See more »
             
       .item
-        %img{:src => "/images/web/heyho_p.jpg", :alt => "heyholetsgo.hu"}
+        %a.colorbox{:rel => "heyho", :href => @heyho.entries[0] }
+          %img{:src => "/images/web/heyho_p.jpg", :alt => "heyholetsgo.hu"}
         .slide
           %h2
             Webdesign
@@ -70,10 +76,11 @@
             heyholetsgo.hu
           %p Tennis blog based on daily news. Due to its regurarly refreshed news content, it provides a flexible online place for sharing information, additional thoughts and opinions.
           %p
-            %a{:href => "#"} See more »
+            %a.colorbox{:rel => "heyho", :href => @heyho.entries[1] } See more »
 
       .item
-        %img{:src => "/images/web/hg_p.jpg", :alt => "hg.hu"}
+        %a.colorbox{:rel => "bg_hg", :href => @bg_hg.entries[0] }
+          %img{:src => "/images/web/hg_p.jpg", :alt => "hg.hu"}
         .slide
           %h2
             Background Design
@@ -81,10 +88,11 @@
             hg.hu
           %p Background design for an online design and architecture magazine.
           %p
-            %a{:href => "#"} See more »
+            %a.colorbox{:rel => "bg_hg", :href => @bg_hg.entries[1] } See more »
 
       .item
-        %img{:src => "/images/web/kari_p.jpg", :alt => "origo christmas"}
+        %a.colorbox{:rel => "kari", :href => @kari.entries[0] }
+          %img{:src => "/images/web/kari_p.jpg", :alt => "origo christmas"}
         .slide
           %h2
             Webdesign
@@ -92,10 +100,11 @@
             Origo Christmas
           %p The website was designed for the christmas season, mainly based on news, but including forums and programme offers. It's supported by the leading hungarian news portal, called Origo.
           %p
-            %a{:href => "#"} See more »
+            %a.colorbox{:rel => "kari", :href => @kari.entries[1] } See more »
 
       .item
-        %img{:src => "/images/web/mammut_p.jpg", :alt => "Mammut"}
+        %a.colorbox{:rel => "mammut", :href => @mammut.entries[0] }
+          %img{:src => "/images/web/mammut_p.jpg", :alt => "Mammut"}
         .slide
           %h2
             Webdesign
@@ -103,10 +112,11 @@
             Mammut
           %p This site has been formed as part of a long term campaign for the greatest shopping malls in Budapest. It follows costumer activities by serving loads of different programme offers, fashion and sale news.
           %p
-            %a{:href => "#"} See more »
+            %a.colorbox{:rel => "mammut", :href => @mammut.entries[1] } See more »
             
       .item
-        %img{:src => "/images/web/ombrello_p.jpg", :alt => "ombrello.hu"}
+        %a.colorbox{:rel => "ombrello", :href => @ombrello.entries[0] }
+          %img{:src => "/images/web/ombrello_p.jpg", :alt => "ombrello.hu"}
         .slide
           %h2
             Webdesign
@@ -114,10 +124,11 @@
             Ombrello.hu
           %p Website for a Digital Media Company, it provides fresh news about company activities and a complex preview about it's working process.
           %p
-            %a{:href => "#"} See more »
+            %a.colorbox{:rel => "ombrello", :href => @ombrello.entries[1] } See more »
 
       .item
-        %img{:src => "/images/web/parentia_p.jpg", :alt => "parentia.hu"}
+        %a.colorbox{:rel => "parentia", :href => @parentia.entries[0] }
+          %img{:src => "/images/web/parentia_p.jpg", :alt => "parentia.hu"}
         .slide
           %h2
             Webdesign
@@ -126,7 +137,51 @@
           %p A news based childcare site for all parents, who pay attention for diverse methods in child rearing and want to be up to date in health related news about children and to share their problems in order to get help from a great and like-minded community.
           
           %p
-            %a{:href => "#"} See more »
+            %a.colorbox{:rel => "parentia", :href => @parentia.entries[1] } See more »
   
   %a.nav.next
     %img{:src => "/images/next.png", :alt => "Next project"}
+
+  - @szoba.entries.each_with_index do |e, i|
+    - unless i < 2 
+      %a.colorbox.hidden{:href => e, :rel => "szoba"} link
+
+  - @sixmm.entries.each_with_index do |e, i|
+    - unless i < 2 
+      %a.colorbox.hidden{:href => e, :rel => "sixmm"} link
+
+  - @bg_cotcot_first.entries.each_with_index do |e, i|
+    - unless i < 2 
+      %a.colorbox.hidden{:href => e, :rel => "bg_cot_first"} link
+
+  - @bg_cotcot_second.entries.each_with_index do |e, i|
+    - unless i < 2 
+      %a.colorbox.hidden{:href => e, :rel => "bg_cot_second"} link
+
+  - @bg_hg.entries.each_with_index do |e, i|
+    - unless i < 2 
+      %a.colorbox.hidden{:href => e, :rel => "bg_hg"} link
+
+  - @foodmatters.entries.each_with_index do |e, i|
+    - unless i < 2 
+      %a.colorbox.hidden{:href => e, :rel => "foodmatters"} link
+
+  - @heyho.entries.each_with_index do |e, i|
+    - unless i < 2 
+      %a.colorbox.hidden{:href => e, :rel => "heyho"} link
+
+  - @mammut.entries.each_with_index do |e, i|
+    - unless i < 2 
+      %a.colorbox.hidden{:href => e, :rel => "mammut"} link
+
+  - @ombrello.entries.each_with_index do |e, i|
+    - unless i < 2 
+      %a.colorbox.hidden{:href => e, :rel => "ombrello"} link
+
+  - @kari.entries.each_with_index do |e, i|
+    - unless i < 2 
+      %a.colorbox.hidden{:href => e, :rel => "kari"} link
+
+  - @parentia.entries.each_with_index do |e, i|
+    - unless i < 2 
+      %a.colorbox.hidden{:href => e, :rel => "parentia"} link
