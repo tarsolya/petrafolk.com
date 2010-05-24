@@ -7,12 +7,17 @@
 
     .items
       .item
-        %img{:src => "/images/photos/photos_p.jpg", :alt => "Photos"}
+        %a.colorbox{:rel => "photos", :href => @photos.entries[0] }
+          %img{:src => "/images/photos/photos_p.jpg", :alt => "Photos"}
         .slide
           %h2 Black & White Photographs
           %p Taken at and inspired by Budapest.
           %p
-            %a{:href => "#"} See more »
+            %a.colorbox{:rel => "photos", :href => @photos.entries[1] } See more »
 
   %a.nav.next
     %img{:src => "/images/next.png", :alt => "Next project"}
+
+  - @photos.entries.each_with_index do |e, i|
+    - unless i < 2 
+      %a.colorbox.hidden{:href => e, :rel => "photos"} link

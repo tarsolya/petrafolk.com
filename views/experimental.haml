@@ -6,30 +6,45 @@
   .scroll
 
     .items
-      %div.item
-        %img{:src => "/images/experimental/coctail_p.jpg", :alt => "Coctail"}
-        %div.slide
+      .item
+        %a.colorbox{:rel => "coctail", :href => @coctail.entries[0] }
+          %img{:src => "/images/experimental/coctail_p.jpg", :alt => "Coctail"}
+        .slide
           %h2 Design Coctail
           %p Photo serial about an experimental project, called Design Coctail. Inspired by the idea, that any gastronomical photographs should create illusions of products which look too perfect and tempting, altough their origin may be not natural.
           %p In this serial, the coctails were made from different materials like mud and cotton wool, which are not edible or drinkable.
           %p
-            %a{:href => "#"} See more »
+            %a.colorbox{:rel => "coctail", :href => @coctail.entries[1] } See more »
         
-      %div.item
-        %img{:src => "/images/experimental/fashion_p.jpg", :alt => "Fashion"}
-        %div.slide
+      .item
+        %a.colorbox{:rel => "fashion", :href => @fashion.entries[0] }
+          %img{:src => "/images/experimental/fashion_p.jpg", :alt => "Fashion"}
+        .slide
           %h2 Illustrations
           %p
-            %a{:href => "#"} See more »
+            %a.colorbox{:rel => "fashion", :href => @fashion.entries[1] } See more »
         
-      %div.item
-        %img{:src => "/images/experimental/ladies_p.jpg", :alt => "Ladies and Gentlemen"}
-        %div.slide
+      .item
+        %a.colorbox{:rel => "ladies", :href => @ladies.entries[0] }
+          %img{:src => "/images/experimental/ladies_p.jpg", :alt => "Ladies and Gentlemen"}
+        .slide
           %h2 Ladies and Gentlemen
           %p Photo serial about a little adventure, collecting the graphic symbols from public toilets from restaurants, bars, pubs all over the world.
           %p
-            %a{:href => "#"} See more »
-        
+            %a.colorbox{:rel => "ladies", :href => @ladies.entries[1] } See more »
   
   %a.nav.next
     %img{:src => "/images/next.png", :alt => "Next project"}
+
+  - @coctail.entries.each_with_index do |e, i|
+    - unless i < 2 
+      %a.colorbox.hidden{:href => e, :rel => "coctail"} link
+
+  - @fashion.entries.each_with_index do |e, i|
+    - unless i < 2 
+      %a.colorbox.hidden{:href => e, :rel => "fashion"} link
+
+  - @ladies.entries.each_with_index do |e, i|
+    - unless i < 2 
+      %a.colorbox.hidden{:href => e, :rel => "ladies"} link
+      

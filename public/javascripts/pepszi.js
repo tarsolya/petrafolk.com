@@ -19,4 +19,8 @@ $(function() {
     circular: false
   });
   
+  $(".colorbox").colorbox({
+    opacity: 0.3
+  });
+  
 });

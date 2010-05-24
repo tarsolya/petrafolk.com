@@ -94,3 +94,6 @@ nav ul li.about:hover { background-position: -486px -350px; }
 .slide p a { color: #aa0384; font-weight: bold; font-family: "Georgia", "serif"; font-size: 15px; text-decoration: none; }
 /* line 176, ../../sass/screen.scss */
 .slide p a:hover { text-decoration: underline; }
+
+/* line 184, ../../sass/screen.scss */
+.hidden { display: none; }

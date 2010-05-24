@@ -7,12 +7,17 @@
 
     .items
       .item
-        %img{:src => "/images/graphics/graphics_p.jpg", :alt => "Graphics"}
+        %a.colorbox{:rel => "graphics", :href => @graphics.entries[0] }
+          %img{:src => "/images/graphics/graphics_p.jpg", :alt => "Graphics"}
         .slide
           %h2 Freehand graphics
           %p Some of the portraits and sketches drawn while attending my art school.
           %p
-            %a{:href => "#"} See more »
+            %a.colorbox{:rel => "graphics", :href => @graphics.entries[1] } See more »
 
   %a.nav.next
     %img{:src => "/images/next.png", :alt => "Next project"}
+
+  - @graphics.entries.each_with_index do |e, i|
+    - unless i < 2 
+      %a.colorbox.hidden{:href => e, :rel => "graphics"} link
