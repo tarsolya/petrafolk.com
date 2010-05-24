@@ -151,6 +151,7 @@ ul.sub {
   width: 307px; 
   height: 29px; 
   margin-left: 40px;
+  z-index: 2000;
   
   li {
     display: block; 
@@ -204,9 +205,28 @@ ul.sub {
 }
 
 .outer-scroll {
+  position: relative;
   padding: 40px 0 0 0; 
   width: 960px; 
   height: 488px; 
+  
+  .flag {
+    width: 86px;
+    height: 64px;
+    position: absolute;
+    top: -22px;
+    right: 90px;
+    
+    &.web {
+      background: url(/images/flag_web.png) no-repeat; }
+    &.offline {
+      background: url(/images/flag_offline.png) no-repeat; }
+    &.logos {
+      background: url(/images/flag_logos.png) no-repeat; }
+    &.flash {
+      background: url(/images/flag_flash.png) no-repeat; }
+    
+  }
 
   .scroll {
 
