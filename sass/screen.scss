@@ -136,8 +136,66 @@ nav {
   }
 }
 
+ul.sub {
+  position: absolute;
+  width: 307px; 
+  height: 29px; 
+  background: red; 
+  margin-left: 40px;
+  
+  li {
+    display: block; 
+    float: left; 
+    height: 29px; 
+    background: url(/images/submenu.png) no-repeat;
+    
+    a {
+      display: block;
+      width: 100%;
+      height: 29px;
+    }
+    
+    &.web {
+      width: 79px;
+      background-position: 0 0;
+
+      &:hover {
+        background-position: 0 -29px;
+      }
+    }
+    
+    &.offline {
+      width: 74px;
+      background-position: -79px 0;
+      
+      &:hover {
+        background-position: -79px -58px;
+      }
+    }
+
+    &.logos {
+      width: 74px;
+      background-position: -153px 0;
+      
+      &:hover {
+        background-position: -153px -87px;
+      }
+    }
+    
+    &.flash {
+      width: 80px;
+      background-position: -227px 0;
+
+      &:hover {
+        background-position: -227px -116px;
+      }
+    }
+    
+  }
+}
+
 .outer-scroll {
-  padding: 20px 0 0 0; 
+  padding: 40px 0 0 0; 
   width: 960px; 
   height: 488px; 
 

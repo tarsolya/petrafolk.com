@@ -78,32 +78,55 @@ nav ul li.about { width: 91px; background-position: -486px 0; }
 nav ul li.about:hover { background-position: -486px -350px; }
 
 /* line 139, ../../sass/screen.scss */
-.outer-scroll { padding: 20px 0 0 0; width: 960px; height: 488px; }
-/* line 144, ../../sass/screen.scss */
-.outer-scroll .scroll { float: left; position: relative; overflow: hidden; width: 618px; height: 468px; }
+ul.sub { position: absolute; width: 307px; height: 29px; background: red; margin-left: 40px; }
+/* line 146, ../../sass/screen.scss */
+ul.sub li { display: block; float: left; height: 29px; background: url(/images/submenu.png) no-repeat; }
 /* line 152, ../../sass/screen.scss */
+ul.sub li a { display: block; width: 100%; height: 29px; }
+/* line 158, ../../sass/screen.scss */
+ul.sub li.web { width: 79px; background-position: 0 0; }
+/* line 162, ../../sass/screen.scss */
+ul.sub li.web:hover { background-position: 0 -29px; }
+/* line 167, ../../sass/screen.scss */
+ul.sub li.offline { width: 74px; background-position: -79px 0; }
+/* line 171, ../../sass/screen.scss */
+ul.sub li.offline:hover { background-position: -79px -58px; }
+/* line 176, ../../sass/screen.scss */
+ul.sub li.logos { width: 74px; background-position: -153px 0; }
+/* line 180, ../../sass/screen.scss */
+ul.sub li.logos:hover { background-position: -153px -87px; }
+/* line 185, ../../sass/screen.scss */
+ul.sub li.flash { width: 80px; background-position: -227px 0; }
+/* line 189, ../../sass/screen.scss */
+ul.sub li.flash:hover { background-position: -227px -116px; }
+
+/* line 197, ../../sass/screen.scss */
+.outer-scroll { padding: 40px 0 0 0; width: 960px; height: 488px; }
+/* line 202, ../../sass/screen.scss */
+.outer-scroll .scroll { float: left; position: relative; overflow: hidden; width: 618px; height: 468px; }
+/* line 210, ../../sass/screen.scss */
 .outer-scroll .scroll .items { width: 20000em; position: absolute; }
-/* line 156, ../../sass/screen.scss */
+/* line 214, ../../sass/screen.scss */
 .outer-scroll .scroll .items div.item { float: left; }
-/* line 161, ../../sass/screen.scss */
+/* line 219, ../../sass/screen.scss */
 .outer-scroll a.nav { display: block; width: 31px; height: 31px; }
-/* line 166, ../../sass/screen.scss */
+/* line 224, ../../sass/screen.scss */
 .outer-scroll a.nav img { margin-top: 100px; }
-/* line 169, ../../sass/screen.scss */
+/* line 227, ../../sass/screen.scss */
 .outer-scroll a.nav.next { margin-right: 140px; margin-left: 20px; float: right; }
-/* line 174, ../../sass/screen.scss */
+/* line 232, ../../sass/screen.scss */
 .outer-scroll a.nav.previous { margin-left: 100px; margin-right: 20px; float: left; }
 
-/* line 182, ../../sass/screen.scss */
+/* line 240, ../../sass/screen.scss */
 .slide { width: 310px; padding: 10px 20px; }
-/* line 186, ../../sass/screen.scss */
+/* line 244, ../../sass/screen.scss */
 .slide h2 { font-family: "Georgia", "serif"; font-size: 32px; margin-bottom: 18px; color: #000; }
-/* line 192, ../../sass/screen.scss */
+/* line 250, ../../sass/screen.scss */
 .slide p { font-family: "Georgia", "serif"; font-size: 14px; margin-bottom: 9px; color: #929292; }
-/* line 198, ../../sass/screen.scss */
+/* line 256, ../../sass/screen.scss */
 .slide p a { color: #aa0384; font-weight: bold; font-family: "Georgia", "serif"; font-size: 15px; text-decoration: none; }
-/* line 205, ../../sass/screen.scss */
+/* line 263, ../../sass/screen.scss */
 .slide p a:hover { text-decoration: underline; }
 
-/* line 213, ../../sass/screen.scss */
+/* line 271, ../../sass/screen.scss */
 .hidden { display: none; }
