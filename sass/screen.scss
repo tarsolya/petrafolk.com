@@ -25,13 +25,39 @@ header {
   width: 960px; 
   height: 190px; 
 
-  a {
+  a.logo {
     position: relative;
     top: 40px;
     display: block; 
     width: 220px; 
     height: 90px; 
   }
+  
+  ul {
+    list-style-type: none; 
+    float: right; 
+    margin-right: 70px; 
+    
+    li {
+      display: inline; 
+      line-height: 40px; 
+      font-family: "Arial", sans-serif; 
+      font-size: 12px; 
+      font-weight: bold; 
+
+      &.last {
+        border-left: 1px solid #77868b; 
+      }
+      
+      a {
+        color: #d3f6ff; 
+        padding: 0 10px;
+      }
+    }
+      
+      
+  }
+  
 }
 
 
