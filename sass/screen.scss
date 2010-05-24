@@ -18,14 +18,16 @@ header, nav, section, aside {
 .canvas {
   width: 960px; 
   height: 963px; 
-  background: url(/images/canvas-bg.png) no-repeat;
+  background: url(/images/canvas-bg.png) 0 40px no-repeat;
   margin: 0 auto; }
   
 header {
   width: 960px; 
-  height: 150px; 
+  height: 190px; 
 
-  a { 
+  a {
+    position: relative;
+    top: 40px;
     display: block; 
     width: 220px; 
     height: 90px; 
