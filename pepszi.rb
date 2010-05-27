@@ -88,6 +88,10 @@ get '/portfolio/web' do
   view :web
 end
 
+get '/about' do
+  view :about
+end
+
 
 # Helpers
 helpers do
